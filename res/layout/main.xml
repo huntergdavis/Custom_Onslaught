@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<com.google.ads.AdView android:id="@+id/adView"
+		android:layout_alignParentTop="true" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" ads:adUnitId="a14e29a23f68523"
+		ads:adSize="BANNER" ads:loadAdOnCreate="true" />
+	<TableRow android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:id="@+id/tableButtonsRow" android:layout_alignParentTop="true"
+		android:visibility="visible" android:layout_gravity="bottom"> 
+		<Button android:text="*" android:id="@+id/resetButton"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		<Button android:text="||" android:id="@+id/pauseButton" android:textStyle="bold"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />	
+		<Button android:text="Scores" android:id="@+id/scoresButton"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		<Button android:text="CPU" android:id="@+id/loadButton"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		<Button android:text="P1" android:id="@+id/shipButton"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		<Button android:text="ID" android:id="@+id/nameButton"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />	
+		<CheckBox android:text="↑↓" android:id="@+id/checkBox1" android:layout_width="wrap_content" android:layout_height="wrap_content"></CheckBox>
+
+	</TableRow>
+
+	<com.hunterdavis.customonslaught.Panel
+		android:id="@+id/SurfaceView01" android:layout_width="fill_parent"
+
+		android:layout_height="fill_parent">
+	</com.hunterdavis.customonslaught.Panel>
+
+</LinearLayout>
